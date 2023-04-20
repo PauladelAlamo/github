@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+.formulario{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* background-color: rgb(41, 101, 147); */
+ 
+
+    color: rgb(72, 72, 72);
+    font-size:16px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    background-color: #a2ff96;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+form{
+    text-align: left;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+input{
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    height: 20px;
+    padding:2px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.boton:hover{
+    background-color: #d2d1d1;
+}
+
+.campo{
+padding:10px;
+
+
+}
+
+.submit{
+    text-align:center;
+    margin:20px;
+}
+button{
+    background-color: #4aaf3c;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+select{
+    width: 150px;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    border: 0;
+    margin-left: 20px;
+    padding: 3px;
+
+
+
+}
+.checkbox{
+    width: 18px;
+
+    height: 13px;
+    margin: 5px;
+    
+}
+.hobbies {
+    padding-bottom: 10px ;
+}
+
+.danger{
+    color:rgb(255, 255, 255);
+    background-color: rgb(155, 14, 14);
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    width: 60%;
+}

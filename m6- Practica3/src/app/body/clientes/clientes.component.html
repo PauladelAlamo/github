@@ -1,0 +1,27 @@
+
+  
+  <table class="tbl1" style="width:100%">
+    <thead>
+      <tr> 
+          <th>NOMBRE</th>
+          <th>APELLIDOS</th>
+          <th>FECHA DE NACIMIENTO</th>
+          <th>EMAIL</th>
+          <th>CODIGO POSTAL</th>
+          <th>GENERO</th>
+      </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let client of clients">
+      <tr>
+        <td>{{client.nombre}}</td>
+        <td>{{client.apellidos}}</td>
+        <td>{{client.fechaNacimiento}}</td>
+        <td>{{client.email}}</td>
+
+        <td>{{client.codigoPostal}}</td>
+        <td>{{client.genero}}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+  </table>
