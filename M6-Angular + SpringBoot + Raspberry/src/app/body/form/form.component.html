@@ -1,0 +1,73 @@
+<div class="formulario">
+
+    <H1>Formulario</H1>
+
+    <form [formGroup]="FormularioCliente" (ngSubmit)="Clic(FormularioCliente.value)">
+        <div class="campo">
+            <span>Nº:</span>
+            <input type="text" #itId  class="form-control" name="nombre" formControlName="nombre">
+        </div>
+        <div class="campo">
+            <span>Nombre:</span>
+            <input type="text" #itNombre  class="form-control" name="nombre" formControlName="nombre">
+        </div>
+
+        <div *ngIf="nombre.invalid"  class="danger">El campo Nombre es obligatorio</div>
+        <div class="campo">
+            <span>Apellidos:</span>
+            <input type="text" #itApellidos  class="form-control" name="apellidos" formControlName="apellidos">
+
+        </div>
+
+      <div class="campo">
+            <span>Fecha Nacimiento:</span>
+            <input type="date" #itFechaNacimiento  class="form-control" name="fechaNacimiento" formControlName="fechaNacimiento">
+        </div>
+
+        <div class="campo">
+            <span>Email:</span>
+            <input type="email" #itEmail  class="form-control" name="email" formControlName="email">
+        </div>
+        <div *ngIf="nombre.invalid" class="danger">No estas introduciendo el email correctamente</div>
+
+
+        <div class="campo">
+            <span>Codigo Postal:</span>
+            <input type="number" #itCodigoPostal  class="form-control" name="codigoPostal" formControlName="codigoPostal">
+        </div>
+
+        <div class="campo">
+            <span>Genero:</span>
+            <select name="genero" #itGenero  formControlName="genero" >
+                <option>Masculino</option>
+                <option>Femenino</option>
+
+            </select>
+        </div>
+
+
+        <!-- <div class="campo">
+            <span>Hobbies:</span>
+            <br><br>
+           
+            <input type="checkbox" class="checkbox" name="hobbies" formControlName="hobbies" value="ordenador">   <span class="hobbies">Jugar al ordenador</span> <br>
+            <input type="checkbox" class="checkbox" name="hobbies" formControlName="hobbies" value="dibujar">Dibujar<br>
+            <input type="checkbox" class="checkbox" name="hobbies" formControlName="hobbies" value="leer">Leer<br>
+            <input type="checkbox" class="checkbox" name="hobbies" formControlName="hobbies" value="instrumento">Tocar un instrumento<br>
+
+
+
+        </div> -->
+
+    
+
+        <div class="submit">
+            <button class="form-control" (click)="Clic">SUBMIT</button>
+        </div>
+
+
+
+
+    </form>
+
+</div>
